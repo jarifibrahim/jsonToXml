@@ -3,13 +3,14 @@
 jsonToXml is a command line utility tool that can be used to fetch json from a URL and conver that json into xml. The tool currently support only the following json format.
 
 ```
-type jsonData {
-  id 			int
-  first_name 	string
-  last_name 	string
-  city 			string
-  state 		string
+type jsonData struct {
+	Id        int
+	FirstName string
+	LastName  string
+	City      string
+	State     string
 }
+
 ```
 
 To use a different json object, please edit the jsonData type in main.go.
